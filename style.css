@@ -1,1 +1,15 @@
 /*CSS styling goes here*/
+#main {
+  border: 5px red solid;
+  width:1400px;
+  display:inline-block;
+}
+
+.sNote {
+  width:200px;
+  height:200px;
+  background:yellow;
+  border:1px black solid;
+  display:inline-block;
+  margin: 25px 0 25px 25px;
+}

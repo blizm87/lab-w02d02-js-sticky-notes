@@ -12,4 +12,10 @@
   border:1px black solid;
   display:inline-block;
   margin: 25px 0 25px 25px;
+  word-wrap:break-word;
+  overflow:auto;
+}
+
+.sNoteText {
+
 }

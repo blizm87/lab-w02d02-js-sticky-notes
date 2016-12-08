@@ -14,8 +14,19 @@
   margin: 25px 0 25px 25px;
   word-wrap:break-word;
   overflow:auto;
+  text-align:left;
 }
 
 .sNoteText {
+  border-bottom:1px black solid;
+  font-size:20px;
+  padding:none;
+  margin-top:-4px;
+}
 
+.noteRemove {
+  display:block;
+  font-size:28px;
+  text-align:right;
+  margin-top:-10px;
 }

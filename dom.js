@@ -1,17 +1,23 @@
  // JavaScript goes here
-var addText = function (){
-  var sNoteText = window.prompt('Enter your text here:');
-  var newContent = document.createTextNode(sNoteText);
-  sNote.appendChild(newContent);
-}
-
 var createNote = function(){
   if(noteButton.value === 'Add a new note'){
     sNote = document.createElement('div');
+    var sNoteText = document.createElement('p');
+    var noteRemove = document.createElement('span');
+
     sNote.setAttribute('class','sNote');
+    sNoteText.setAttribute('contenteditable',true);
+    sNoteText.setAttribute('class','sNoteText');
+    noteRemove.setAttribute('class','noteRemove');
+    noteRemove.innerHTML = 'x';
     main.appendChild(sNote);
+    sNote.appendChild(noteRemove);
+    sNote.appendChild(sNoteText);
     noteCounter.value = document.querySelectorAll('.sNote').length;
-    sNote.addEventListener('click',addText);
+    noteRemove.addEventListener('click', function(){
+      this.parentNode.remove();
+      noteCounter.value = document.querySelectorAll('.sNote').length;
+    });
 
   }
 }
